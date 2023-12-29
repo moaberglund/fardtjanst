@@ -20,6 +20,32 @@
 
     <div id="wrapper">
         <section id="booking-page">
+            <h1>Ny bokning</h1>
+            <form>
+                <label for="from">Från:</label>
+                <input type="text">
+                <label for="to">Till:</label>
+                <input type="text">
+                <label for="date">Datum:</label>
+                <input type="date">
+
+                <label for="time">Önskad tid:</label>
+                <input type="time">
+                <label for="repeat">Återkommande resa?</label>
+                <select name="week-month" id="repeat-travel">
+                    <option value="day">Dagligen</option>
+                    <option value="week">Varje vecka</option>
+                    <option value="month">Varje månad</option>
+                </select>
+
+                <label for="help">Fordon med plats för:</label>
+                <input type="checkbox" id="" name="helper" value="">
+                <label for="helper">Ledsagare</label><br>
+                <input type="checkbox" id="" name="dog" value="">
+                <label for="dog">Servicehund</label><br>
+                <input type="checkbox" id="" name="wheelchair" value="">
+                <label for="wheelchair">Rullstol</label>
+            </form>
 
         </section>
     </div>
