@@ -23,27 +23,27 @@
             <h1>Ny bokning</h1>
             <form>
                 <label for="from">Från:</label>
-                <input type="text">
+                <input type="text" id="from">
                 <label for="to">Till:</label>
-                <input type="text">
+                <input type="text" id="to">
                 <label for="date">Datum:</label>
-                <input type="date">
+                <input type="date" id="date">
 
                 <label for="time">Önskad tid:</label>
-                <input type="time">
+                <input type="time" id="time">
                 <label for="repeat">Återkommande resa?</label>
-                <select name="week-month" id="repeat-travel">
+                <select name="week-month" id="repeat">
                     <option value="day">Dagligen</option>
                     <option value="week">Varje vecka</option>
                     <option value="month">Varje månad</option>
                 </select>
 
                 <label for="help">Fordon med plats för:</label>
-                <input type="checkbox" id="" name="helper" value="">
+                <input type="checkbox" id="help-1" name="helper" value="help-1">
                 <label for="helper">Ledsagare</label><br>
-                <input type="checkbox" id="" name="dog" value="">
+                <input type="checkbox" id="help-2" name="dog" value="help-2">
                 <label for="dog">Servicehund</label><br>
-                <input type="checkbox" id="" name="wheelchair" value="">
+                <input type="checkbox" id="help-3" name="wheelchair" value="help-3">
                 <label for="wheelchair">Rullstol</label>
 
                 <button class="red-btn">Kolla tillgänglighet</button>
@@ -57,7 +57,7 @@
         <p>0250 - 123 12 33</p>
         <p><a href="mailto:info@fardtjanst.com">info@fardtjanst.com</a></p>
     </div>
-    <div id="copy raport">
+    <div id="copyright">
         <p><a href="">Tillgänglighetsrapport</a></p>
         <p>&copy; Moa Berglund 2023</p>
     </div>
