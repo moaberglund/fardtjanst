@@ -45,8 +45,11 @@ footer {
 
     .wrapper {
         max-width: 1100px;
-        background-color: rgb(232, 238, 241, 0.1);
         margin: auto;
     }
-    
+
+    .wrapper section {
+        background-color: rgb(232, 238, 241, 0.1);
+    }
+
 }
