@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Färdtjänst - Ny bokning</title>
+    <title>Färdtjänst - Kontakt</title>
 
     <!-- CSS och JS -->
     <link rel="stylesheet" href="../CSS/styles.css">
@@ -16,6 +16,7 @@
 </head>
 
 <body>
+
     <header>
         <div class="wrapper">
             <picture>
@@ -23,7 +24,6 @@
                     srcset="../media/mini-logo.svg">
                 <img src="../media/logotyp.svg" alt="logotyp" width="1000px">
             </picture>
-
             <!-- MENY-knapp -->
             <button class="menu-btn open" id="open-menu">
                 <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
@@ -33,10 +33,11 @@
                 <button class="menu-btn close" id="close-menu">
                     <i class="fa-solid fa-xmark" style="color: #de2c33;"></i>
                 </button>
+
                 <ul>
                     <li><a href="booking.html">Ny bokning</a></li>
                     <li><a href="trips.html">Kommande resor</a></li>
-                    <li><a href="contact.html">Kontakt</a></li>
+                    <li><a href="contact.html">kontakt</a></li>
                     <li><a href="profile.html">Mina sidor</a></li>
                     <li><a href="../index.html">Logga ut</a></li>
                 </ul>
@@ -45,49 +46,15 @@
     </header>
 
     <div class="wrapper">
-        <section id="booking-page">
-            <h1>Ny bokning</h1>
-            <form>
-                <label for="from">Från:</label>
-                <input type="text" id="from"><br>
-                <label for="to">Till:</label>
-                <input type="text" id="to"><br>
-                <label for="date">Datum:</label>
-                <input type="date" id="date"><br>
-
-                <label for="time">Önskad tid:</label>
-                <input type="time" id="time"><br>
-                <label for="repeat">Återkommande resa?</label>
-                <select name="week-month" id="repeat">
-                    <option value="none">- - -</option>
-                    <option value="day">Dagligen</option>
-                    <option value="week">Varje vecka</option>
-                    <option value="month">Varje månad</option>
-                </select><br>
-
-                <label for="help">Fordon med plats för:</label><br>
-                <input type="checkbox" id="help-1" name="helper" value="help-1">
-                <label for="helper">Ledsagare</label><br>
-                <input type="checkbox" id="help-2" name="dog" value="help-2">
-                <label for="dog">Servicehund</label><br>
-                <input type="checkbox" id="help-3" name="wheelchair" value="help-3">
-                <label for="wheelchair">Rullstol</label><br>
-
-                <button class="red-btn">Kolla tillgänglighet</button>
-            </form>
-
+        <section>
+            <h1>Du har för tillfället ingen sparad information här.</h1>
         </section>
+
     </div>
 
     <!-- footer -->
     <footer>
         <div class="wrapper">
-            <div id="contact">
-                <h3>Kontakt</h3>
-                <a href="tel:0250-123133">
-                    <i class="fa-solid fa-phone" style="color: #000000;"></i>0250 - 123 12 33</a>
-                <p><a href="mailto:info@fardtjanst.com">info@fardtjanst.com</a></p>
-            </div>
             <div id="copyright">
                 <p><a href="">Tillgänglighetsrapport</a></p>
                 <p>&copy; Moa Berglund 2023</p>
