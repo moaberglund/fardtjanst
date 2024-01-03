@@ -15,8 +15,7 @@ header {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
-/* LE BURGER meny */
-
+/* MENY NAV */
 /*navigationen + listan*/
 nav {
     background-color: #DE2C33;
@@ -58,7 +57,6 @@ nav li:hover {
     cursor: pointer;
 }
 
-
 /* öppna meny-knapp */
 .menu-btn {
     position: absolute;
@@ -68,9 +66,7 @@ nav li:hover {
     align-items: center;
     background-color: #DE2C33;
     cursor: pointer;
-    padding: 8px 15px;
 }
-
 .open {
     margin: 1em 1.5em;
     padding: 10px 15px;
@@ -91,7 +87,7 @@ nav li:hover {
 
 .wrapper img {
     padding-left: 1em;
-    width: 10vw;
+    width: 40vw;
 }
 body {
     background-color: rgb(232, 238, 241, 0.1);
