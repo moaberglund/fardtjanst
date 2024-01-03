@@ -15,10 +15,17 @@ header {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
 }
 .wrapper img {
+    padding-left: 1em;
     width: 10vw;
 }
-
-
+body {
+    background-color: rgb(232, 238, 241, 0.1);
+}
+.wrapper  {
+    max-width: 95%;
+    margin: auto;
+    padding-left: 1em;
+}
 
 
 .red-btn {
@@ -29,10 +36,27 @@ header {
 }
 
 /* index */
-
-#login-page h1 {
+#login-page h1{
     max-width: 330px;
+    margin: auto;
     margin-bottom: 1em;
+}
+#login-page form input {
+    background-color: #E8EEF1;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+    padding: 1em;
+    margin: 0.2em 0 1.2em 0;
+    height: 2em;
+    width: 300px;
+}
+/* ny boknings-sidan */
+#booking-page form input {
+    background-color: #E8EEF1;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+    padding: 1em;
+    margin: 0.2em 0 1.2em 0;
+    max-height: 2em;
+    max-width: 300px;
 }
 
 #pincode {
@@ -41,7 +65,10 @@ header {
 
 footer {
     background-color: #E8EEF1;
+    padding-left: 1em;
 }
+
+
 
 /* LAPTOP */
 @media screen and (min-width:1024px) {
