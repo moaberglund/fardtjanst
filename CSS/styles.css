@@ -14,6 +14,81 @@ header {
     background-color: #DE2C33;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
 }
+
+/* LE BURGER meny */
+
+/*navigationen + listan*/
+nav {
+    background-color: #DE2C33;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 250px;
+    display: none;
+}
+
+nav ul {
+    width: 100%;
+    top: 5em;
+    position: absolute;
+    list-style-type: none;
+    text-align: left;
+    margin: 0 auto;
+    padding: 0;
+}
+
+nav li {
+    text-transform: uppercase;
+    padding: 1em;
+    width: 100%;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 700;
+    padding: 0 1em;
+}
+
+nav li:hover {
+    color: #6C757D;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/* öppna meny-knapp */
+.menu-btn {
+    position: absolute;
+    right: 3em;
+    top: 0;
+    display: flex;
+    align-items: center;
+    background-color: #DE2C33;
+    cursor: pointer;
+    padding: 8px 15px;
+}
+
+.open {
+    margin: 1em 1.5em;
+    padding: 10px 15px;
+}
+.close {
+    margin: 1em 1.5em;
+    padding: 10px 15px;
+    background-color: white;
+}
+
+.menu-btn:hover {
+    cursor: pointer;
+}
+
+.menu-icon {
+    margin-right: 10px;
+}
+
 .wrapper img {
     padding-left: 1em;
     width: 10vw;
@@ -73,6 +148,51 @@ footer {
 /* LAPTOP */
 @media screen and (min-width:1024px) {
 
+    /* MENY */
+    .menu-btn {
+        display: none;
+    }
+
+    #open-menu {
+        display: none !important;
+    }
+
+    #close-menu {
+        display: none !important;
+    }
+
+    nav {
+        display: block !important;
+        position: static;
+        height: auto;
+        width: auto;
+        font-size: 1.2em;
+    }
+
+    nav ul {
+        text-align: right;
+        position: static;
+        height: 100%;
+    }
+
+    nav li {
+        display: inline;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 1em;
+    }
+
+    nav a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1em;
+    }
+
+    nav a:hover {
+        color: #6C757D;
+    }
+
     .wrapper {
         max-width: 1100px;
         margin: auto;
@@ -81,9 +201,4 @@ footer {
     .wrapper section {
         background-color: rgb(232, 238, 241, 0.1);
     }
-
-    nav li {
-        display: inline;
-    }
-
 }
