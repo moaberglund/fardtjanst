@@ -9,7 +9,11 @@
     box-sizing: border-box;
     font-family: "Inter", Arial, Helvetica, sans-serif;
 }
-
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 h1 {
     font-size: 28px;
     font-weight: bold;
@@ -33,7 +37,7 @@ nav {
     position: absolute;
     right: 0;
     top: 0;
-    height: 100vh;
+    height: 80vh;
     width: 350px;
     display: none;
 }
@@ -108,7 +112,6 @@ body {
     padding-left: 1em;
 }
 
-
 .red-btn {
     padding: 1em;
     background-color: #DE2C33;
@@ -121,24 +124,8 @@ body {
 .red-btn:hover {
     cursor: pointer;
 }
-.trips-btn {
-    padding: 1em;
-    width: 80vw;
-    max-width: 1000px;
-    margin: 1em auto 1em 1em;
-    background-color: #DE2C33;
-    color: white;
-    text-align: left;
-    font-size: 16px;
-    font-weight: bold;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-}
-.trips-btn:hover {
-    cursor: pointer;
-}
 
-/* index */
+/* INDEX */
 #login-page h1{
     max-width: 330px;
     margin: auto;
@@ -152,7 +139,14 @@ body {
     height: 2em;
     width: 300px;
 }
-/* ny boknings-sidan */
+#pincode {
+    font-style: italic;
+}
+
+#login-page .contact-nr {
+    margin-top: 2em
+}
+/* BOOKING-page */
 #booking-page form input {
     background-color: #E8EEF1;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
@@ -161,23 +155,33 @@ body {
     max-height: 2em;
     max-width: 300px;
 }
-
-#pincode {
-    font-style: italic;
+/* TRIPS-page */
+.trips-btn {
+    padding: 1em;
+    width: 80vw;
+    max-width: 1000px;
+    margin: 1em auto 1em 0;
+    background-color: #DE2C33;
+    color: white;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+.trips-btn:hover {
+    cursor: pointer;
 }
 
+/* CONTACT-page */
 #contact-page article {
     margin: 0 0 2em 0;
     line-height: 1.7em;
 }
 footer {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
     background-color: #E8EEF1;
     padding: 1em 0 1em 1em;
-    margin-top: 2em;
+    margin-top: auto;
 }
 #footer-1 a{
 display: block;
@@ -189,9 +193,6 @@ padding-top: 1em;
     
 }
 #copyright {
-    position: absolute;
-    right: 0.5em;
-    bottom: 1em;
 }
 
 
