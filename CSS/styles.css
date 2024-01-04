@@ -37,7 +37,7 @@ nav {
     position: absolute;
     right: 0;
     top: 0;
-    height: 80vh;
+    height: 100vh;
     width: 350px;
     display: none;
 }
@@ -86,9 +86,14 @@ nav li:hover {
     padding: 10px 15px;
 }
 .close {
-    margin: 1em 1.5em;
-    padding: 10px 15px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 1em 0 1em 1em;
     background-color: white;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+    width: 350px;
+    height: 10vh;
 }
 
 .menu-btn:hover {
@@ -191,8 +196,6 @@ padding-top: 1em;
 #footer-2 a{
     line-height: 1.7em;
     
-}
-#copyright {
 }
 
 
