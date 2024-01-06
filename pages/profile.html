@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Färdtjänst - Kontakt</title>
+    <title>Färdtjänst - Mina sidor</title>
 
     <!-- CSS och JS -->
     <link rel="stylesheet" href="../CSS/styles.css">
@@ -45,7 +45,14 @@
 
     <div class="wrapper">
         <section>
-            <h1>Du har för tillfället ingen sparad information här.</h1>
+            <h1>Mina sidor</h1>
+            <h2>Du har för tillfället ingen sparad information här.</h2>
+            <button onclick="skoj()" class="red-btn">Lägg till information</button>
+            <script>
+                function skoj() {
+                    confirm("Det går för närvarande inte att göra ändringar, sidan är under uppehåll.");
+                }
+            </script>
         </section>
 
     </div>
