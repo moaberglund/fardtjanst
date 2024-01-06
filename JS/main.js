@@ -19,7 +19,7 @@ function toggleMenu() {
     let style = window.getComputedStyle(navMenuEl);
 
     //ändra mellan none/block beroende på
-    if(style.display === "none") {
+    if (style.display === "none") {
         navMenuEl.style.display = "block";
     } else {
         navMenuEl.style.display = "none";
@@ -50,13 +50,13 @@ function listDisplay() {
     let chevStyle = window.getComputedStyle(chevEl);
 
     //ändra mellan none/block för visa eller ej (drop-down listan)
-    if(listStyle.display === "none") {
+    if (listStyle.display === "none") {
         listEl.style.display = "block";
     } else {
         listEl.style.display = "none";
     }
     //ändra mellan att visa eller ej (orginal knappen)
-    if(chevStyle.display === "block") {
+    if (chevStyle.display === "block") {
         chevEl.style.display = "none";
     } else {
         chevEl.style.display = "block";

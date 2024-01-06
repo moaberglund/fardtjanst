@@ -165,12 +165,19 @@ body {
     max-height: 2em;
     max-width: 300px;
 }
+#booking-page form input:hover {
+    border: 1px black solid;
+    border-radius: 2px;
+}
 #booking-page form select {
     background-color: #E8EEF1;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
     padding: 0.5em;
     margin: 0.2em 0 2em 0;
-   
+}
+#booking-page form select:hover {
+    border: 1px black solid;
+    border-radius: 2px;
 }
 
 /* TRIPS-page */
