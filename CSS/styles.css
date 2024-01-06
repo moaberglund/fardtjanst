@@ -190,6 +190,26 @@ body {
 .trips-btn:hover {
     cursor: pointer;
 }
+#trips-page i {
+    float: right;
+    padding: 0.5em 2em 0.5em 0;
+}
+#chevron-down {
+    display: block;
+}
+#trips-list {
+    display: none;
+}
+
+.trips-list li {
+    text-decoration: none;
+    padding: 1em;
+    margin: 0.5em;
+    width: 80vw;
+    max-width: 1000px;
+    border: 1px black solid ;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+}
 
 /* CONTACT-page */
 #contact-page article {
@@ -270,4 +290,8 @@ padding-top: 1em;
     .wrapper section {
         background-color: rgb(232, 238, 241, 0.1);
     }
+
+    /* booking page */
+
+
 }

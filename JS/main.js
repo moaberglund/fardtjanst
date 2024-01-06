@@ -27,3 +27,38 @@ function toggleMenu() {
 
 
 }
+
+// BOKADE RESOR listan, visa dölj
+
+//element
+let chevronDown = document.getElementById("chevron-down");
+let chevronUp = document.getElementById("chevron-up");
+
+//lyssnare
+chevronDown.addEventListener("click", listDisplay);
+chevronUp.addEventListener("click", listDisplay);
+
+//function
+function listDisplay() {
+    //hitta diven
+    let listEl = document.getElementById("trips-list");
+    //hitta orginal knappen
+    let chevEl = document.getElementById("chevron-down");
+
+    //display settings 
+    let listStyle = window.getComputedStyle(listEl);
+    let chevStyle = window.getComputedStyle(chevEl);
+
+    //ändra mellan none/block för visa eller ej (drop-down listan)
+    if(listStyle.display === "none") {
+        listEl.style.display = "block";
+    } else {
+        listEl.style.display = "none";
+    }
+    //ändra mellan att visa eller ej (orginal knappen)
+    if(chevStyle.display === "block") {
+        chevEl.style.display = "none";
+    } else {
+        chevEl.style.display = "block";
+    }
+}
