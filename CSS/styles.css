@@ -9,16 +9,19 @@
     box-sizing: border-box;
     font-family: "Inter", Arial, Helvetica, sans-serif;
 }
+
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
+
 h1 {
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 1em;
 }
+
 p {
     font-size: 16px;
 }
@@ -84,10 +87,12 @@ nav li:hover {
     background-color: #DE2C33;
     cursor: pointer;
 }
+
 .open {
     margin: 2em 1em;
     padding: 10px 15px;
 }
+
 .close {
     position: absolute;
     right: 0;
@@ -106,6 +111,7 @@ nav li:hover {
 .menu-icon {
     margin-right: 10px;
 }
+
 /* SLUT */
 
 .wrapper img {
@@ -113,10 +119,12 @@ nav li:hover {
     width: 40vw;
     max-width: 400px;
 }
+
 body {
     background-color: rgb(232, 238, 241, 0.1);
 }
-.wrapper  {
+
+.wrapper {
     max-width: 95%;
     margin: auto;
 }
@@ -131,16 +139,18 @@ body {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
     border-radius: 5px;
 }
+
 .red-btn:hover {
     cursor: pointer;
 }
 
 /* INDEX */
-#login-page h1{
+#login-page h1 {
     max-width: 330px;
     margin: auto;
     margin-bottom: 1em;
 }
+
 #login-page form input {
     background-color: #E8EEF1;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
@@ -149,6 +159,7 @@ body {
     height: 2em;
     width: 300px;
 }
+
 #pincode {
     font-style: italic;
 }
@@ -156,6 +167,7 @@ body {
 #login-page .contact-nr {
     margin-top: 2em
 }
+
 /* BOOKING-page */
 #booking-page form input {
     background-color: #E8EEF1;
@@ -165,16 +177,19 @@ body {
     max-height: 2em;
     max-width: 300px;
 }
+
 #booking-page form input:hover {
     border: 1px black solid;
     border-radius: 2px;
 }
+
 #booking-page form select {
     background-color: #E8EEF1;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
     padding: 0.5em;
     margin: 0.2em 0 2em 0;
 }
+
 #booking-page form select:hover {
     border: 1px black solid;
     border-radius: 2px;
@@ -194,16 +209,20 @@ body {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
     border-radius: 5px;
 }
+
 .trips-btn:hover {
     cursor: pointer;
 }
+
 #trips-page i {
     float: right;
     padding: 0.5em 2em 0.5em 0;
 }
+
 #chevron-down {
     display: block;
 }
+
 #trips-list {
     display: none;
 }
@@ -214,7 +233,7 @@ body {
     margin: 0.5em;
     width: 80vw;
     max-width: 1000px;
-    border: 1px black solid ;
+    border: 1px black solid;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -223,27 +242,30 @@ body {
     margin: 0 0 2em 0;
     line-height: 1.7em;
 }
+
 footer {
     background-color: #E8EEF1;
     padding: 1em 0 1em 1em;
     margin-top: auto;
 }
-#footer-1 a{
-display: block;
-padding-top: 1em;
+
+#footer-1 a {
+    display: block;
+    padding-top: 1em;
 }
 
-#footer-2 a{
+#footer-2 a {
     line-height: 1.7em;
-    
+
 }
 
-#info-page p{
+#info-page p {
     width: 60wv;
     max-width: 800px;
     margin: 0 0 1em 0;
     line-height: 1.8em;
 }
+
 #info-page button {
     margin: 1em 1em 0 0;
 }
@@ -307,7 +329,34 @@ padding-top: 1em;
         background-color: rgb(232, 238, 241, 0.1);
     }
 
-    /* booking page */
+    #login-page h1 {
+        margin: 1em 30vw 1em 10vw;
+    }
 
+    #login-page form {
+        width: 60vw;
+        margin: 0 30vw 0 10vw;
+    }
+
+    .contact-nr {
+        margin: 1em 30vw 1em 10vw;
+        line-height: 1.8em;
+    }
+
+    #booking-page h1 {
+        margin: 1em 30vw 1em 10vw;
+    }
+
+    #booking-page form {
+        margin: 1em 30vw 1em 10vw;
+    }
+
+    #contact-page h1 {
+        margin: 1em 30vw 1em 10vw;
+    }
+
+    #contact-page article {
+        margin: 1em 30vw 1em 10vw;
+    }
 
 }
