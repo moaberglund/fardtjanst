@@ -236,6 +236,14 @@ body {
     border: 1px black solid;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
 }
+.change-btn {
+    padding: 0.5em;
+    margin: 0 0.5em 0 1.5em;
+    background-color: rgb(232, 238, 241, 0.0);
+}
+.change-btn:hover {
+    cursor: pointer;
+}
 
 /* CONTACT-page */
 #contact-page article {
@@ -260,7 +268,7 @@ footer {
 }
 
 #info-page p {
-    width: 60wv;
+    width: 60vw;
     max-width: 800px;
     margin: 0 0 1em 0;
     line-height: 1.8em;

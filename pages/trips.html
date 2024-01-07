@@ -23,12 +23,12 @@
             <img src="../media/logotyp.svg" alt="logotyp">
 
             <!-- MENY-knapp -->
-            <button class="menu-btn open" id="open-menu">
+            <button aria-label="Öppna meny" class="menu-btn open" id="open-menu">
                 <i class="fa-solid fa-bars fa-lg" style="color: #ffffff;"></i>
             </button>
             <nav id="nav-menu">
                 <!-- stäng meny knapp -->
-                <button class="menu-btn close" id="close-menu">
+                <button aria-label="Stäng meny" class="menu-btn close" id="close-menu">
                     <i class="fa-solid fa-xmark fa-lg" style="color: #de2c33;"></i>
                 </button>
                 <ul>
@@ -53,36 +53,44 @@
             </div>
             <div class="list">
                 <!-- ner chevron knapp -->
-                <button id="chevron-down" class="trips-btn">
+                <button aria-label="Visa lista" id="chevron-down" class="trips-btn">
                     Lista:
                     <i class="fa-solid fa-chevron-down fa-lg" style="color: #ffffff;"></i>
                 </button>
                 <div id="trips-list" class="trips-list chevron">
                     <!-- upp chevron knapp -->
-                    <button id="chevron-up" class="trips-btn">
+                    <button aria-label="Dölj lista" id="chevron-up" class="trips-btn">
                         Lista:
                         <i class="fa-solid fa-chevron-up fa-lg" style="color: #ffffff;"></i>
                     </button>
                     <ul>
                         <li>Torsdag 9/1 2024 - 12:00
                             <!-- edit -->
-                            <i class="fa-solid fa-pen-to-square" style="color: #000000;"></i>
+                            <button class="change-btn" aria-label="Redigera resa" onclick="editFunction()"><i
+                                    class="fa-solid fa-pen-to-square" style="color: #000000;"></i></button>
                             <!-- delete -->
-                            <i class="fa-solid fa-trash" style="color: #000000;"></i>
-                        </li>
-                        <li>Lördag 13/1 2024 - 17:00
-                            <!-- edit -->
-                            <i class="fa-solid fa-pen-to-square" style="color: #000000;"></i>
-                            <!-- delete -->
-                            <i class="fa-solid fa-trash" style="color: #000000;"></i>
-                        </li>
-                        <li>Lördag 13/1 2024 - 19:30
-                            <!-- edit -->
-                            <i class="fa-solid fa-pen-to-square" style="color: #000000;"></i>
-                            <!-- delete -->
-                            <i class="fa-solid fa-trash" style="color: #000000;"></i>
+                            <button class="change-btn" aria-label="Radera resa" onclick="deleteFunction()"><i
+                                    class="fa-solid fa-trash" style="color: #000000;"></i></button>
                         </li>
 
+                        <li>Lördag 13/1 2024 - 17:00
+                            <!-- edit -->
+                            <button class="change-btn" aria-label="Redigera resa" onclick="editFunction()"><i
+                                    class="fa-solid fa-pen-to-square" style="color: #000000;"></i></button>
+                            <!-- delete -->
+                            <button class="change-btn" aria-label="Radera resa" onclick="deleteFunction()"><i
+                                    class="fa-solid fa-trash" style="color: #000000;"></i></button>
+                        </li>
+
+                        <li>Lördag 13/1 2024 - 19:30
+                            <!-- edit -->
+                            <button class="change-btn" aria-label="Redigera resa" onclick="editFunction()"><i
+                                    class="fa-solid fa-pen-to-square" style="color: #000000;"></i></button>
+                            <!-- delete -->
+                            <button class="change-btn" aria-label="Radera resa" onclick="deleteFunction()"><i
+                                    class="fa-solid fa-trash" style="color: #000000;"></i></button>
+
+                        </li>
                     </ul>
                 </div>
 
@@ -95,7 +103,7 @@
     <footer>
         <div class="wrapper" id="footer-2">
             <div id="contact">
-                <h3>Kontakt</h3>
+                <h2>Kontakt</h2>
                 <a href="tel:0250-123133"><i class="fa-solid fa-phone" style="color: #000000;"></i> 0250 - 123 12 33</a>
                 <a href="mailto:info@fardtjanst.com"><i class="fa-solid fa-envelope" style="color: #000000;"></i>
                     info@fardtjanst.com</a>

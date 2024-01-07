@@ -21,12 +21,12 @@
             <img src="../media/logotyp.svg" alt="logotyp">
 
             <!-- MENY-knapp -->
-            <button class="menu-btn open" id="open-menu">
+            <button aria-label="Öppna meny" class="menu-btn open" id="open-menu">
                 <i class="fa-solid fa-bars fa-lg" style="color: #ffffff;"></i>
             </button>
             <nav id="nav-menu">
                 <!-- stäng meny knapp -->
-                <button class="menu-btn close" id="close-menu">
+                <button aria-label="Stäng meny" class="menu-btn close" id="close-menu">
                     <i class="fa-solid fa-xmark fa-lg" style="color: #de2c33;"></i>
                 </button>
                 <ul>
@@ -74,13 +74,11 @@
             </form>
 
             <form action="trips.html">
-                <button onclick="myFunction()" class="red-btn">Kolla tillgänglighet</button>
+                <button aria-label="Boka resa" onclick="confirmFunction()" class="red-btn">Boka resa</button>
             </form>
 
             <script>
-                function myFunction() {
-                    confirm("Är du säker?");
-                }
+                
             </script>
         </section>
     </div>
@@ -89,7 +87,7 @@
     <footer>
         <div class="wrapper" id="footer-2">
             <div id="contact">
-                <h3>Kontakt</h3>
+                <h2>Kontakt</h2>
                 <a href="tel:0250-123133">
                     <i class="fa-solid fa-phone" style="color: #000000;"></i>0250 - 123 12 33</a>
                 <a href="mailto:info@fardtjanst.com"><i class="fa-solid fa-envelope" style="color: #000000;"></i>

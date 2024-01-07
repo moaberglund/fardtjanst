@@ -62,3 +62,20 @@ function listDisplay() {
         chevEl.style.display = "block";
     }
 }
+//boka ny resa
+function confirmFunction() {
+    confirm("Är du säker?");
+}
+
+//bokade resor-lista
+function editFunction() {
+    confirm("Vill du göra ändringar för markerad resa?");
+}
+function deleteFunction() {
+    confirm("Är du säker på att du vill ta bort denna resa?");
+}
+
+//profil-sidan pop-up
+function skoj() {
+    confirm("Det går för närvarande inte att göra ändringar, sidan är under uppehåll.");
+}
