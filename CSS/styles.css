@@ -82,7 +82,7 @@ nav a {
     padding: 0 0 0 1em;
 }
 
-nav li:hover {
+nav a:hover {
     font-size: 1.2em;
     text-decoration: underline;
     cursor: pointer;
@@ -92,7 +92,7 @@ nav li:hover {
 .menu-btn {
     position: absolute;
     right: 3em;
-    top: 0;
+    top: 1.5em;
     display: flex;
     align-items: center;
     background-color: #DE2C33;
