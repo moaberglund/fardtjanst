@@ -16,6 +16,7 @@
 </head>
 
 <body>
+    <a class="tab-skipper" href="#booking-page">Hoppa till bokning</a>
     <header>
         <div class="wrapper">
             <img src="../media/logotyp.svg" alt="logotyp">
@@ -44,42 +45,54 @@
         <section id="booking-page">
             <h1>Ny bokning</h1>
             <form>
-                <label for="from"><i class="fa-solid fa-location-dot" style="color: #000000;"></i>   Från:</label>
-                <input type="text" id="from"><br>
-                <label for="to"><i class="fa-solid fa-location-pin" style="color: #000000;"></i>    Till:</label>
-                <input type="text" id="to"><br>
-                <label for="date"><i class="fa-solid fa-calendar-days" style="color: #000000;"></i>    Datum:</label>
-                <input type="date" id="date"><br>
+                <fieldset>
+                    <legend>Resedetaljer:</legend><br>
 
-                <label for="time"><i class="fa-regular fa-clock" style="color: #000000;"></i>    Önskad tid:</label>
-                <input type="time" id="time"><br>
+                    <label for="from"><i class="fa-solid fa-location-dot" style="color: #000000;"></i> Från:</label>
+                    <input type="text" id="from"><br>
 
-                <label for="repeat"><i class="fa-solid fa-repeat" style="color: #000000;"></i>    Återkommande resa?</label>
-                <select name="week-month" id="repeat">
-                    <option value="none">- - -</option>
-                    <option value="day">Dagligen</option>
-                    <option value="week">Varje vecka</option>
-                    <option value="month">Varje månad</option>
-                </select><br>
+                    <label for="to"><i class="fa-solid fa-location-pin" style="color: #000000;"></i> Till:</label>
+                    <input type="text" id="to"><br>
 
-                <label for="help-1"><i class="fa-solid fa-van-shuttle" style="color: #000000;"></i>    Fordon med plats för:</label><br> <br>
-                <input type="checkbox" id="help-1" name="helper" value="help-1">
-                <label for="help-1">Ledsagare</label><br>
+                    <label for="date"><i class="fa-solid fa-calendar-days" style="color: #000000;"></i> Datum:</label>
+                    <input type="date" id="date"><br>
 
-                <input type="checkbox" id="help-2" name="dog" value="help-2">
-                <label for="help-2">Servicehund</label><br>
+                    <label for="time"><i class="fa-regular fa-clock" style="color: #000000;"></i> Önskad tid:</label>
+                    <input type="time" id="time"><br>
 
-                <input type="checkbox" id="help-3" name="wheelchair" value="help-3">
-                <label for="help-3">Rullstol</label><br>
+                    <label for="repeat"><i class="fa-solid fa-repeat" style="color: #000000;"></i> Återkommande
+                        resa?</label>
+                    <select name="week-month" id="repeat">
+                        <option value="none">- - -</option>
+                        <option value="day">Dagligen</option>
+                        <option value="week">Varje vecka</option>
+                        <option value="month">Varje månad</option>
+                    </select><br>
+                </fieldset>
             </form>
+            <form>
+                <fieldset>
 
+                    <legend><i class="fa-solid fa-van-shuttle" style="color: #000000;"></i> Fordon med plats för:
+                    </legend><br>
+
+                    <label for="help-1">
+                        <input type="checkbox" id="help-1" name="helper" value="help-1" tabindex="0"> Ledsagare
+                    </label><br>
+
+                    <label for="help-2">
+                        <input type="checkbox" id="help-2" name="dog" value="help-2" tabindex="0"> Servicehund
+                    </label><br>
+
+                    <label for="help-3">
+                        <input type="checkbox" id="help-3" name="wheelchair" value="help-3" tabindex="0"> Rullstol
+                    </label><br>
+
+                </fieldset>
+            </form>
             <form action="trips.html">
                 <button aria-label="Boka resa" onclick="confirmFunction()" class="red-btn">Boka resa</button>
             </form>
-
-            <script>
-
-            </script>
         </section>
     </div>
 

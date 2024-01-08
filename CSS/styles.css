@@ -15,6 +15,16 @@ body {
     display: flex;
     flex-direction: column;
 }
+.tab-skipper { 
+    background-color: #DE2C33;
+    color: #DE2C33;
+    text-decoration: none;
+}
+.tab-skipper:hover {
+    font-size: 1.1em;
+    color: white;
+    text-decoration: underline;
+}
 
 h1 {
     font-size: 28px;
@@ -335,7 +345,7 @@ footer {
     }
 
     nav a:hover {
-        color: #6C757D;
+        color: #000000;
         text-decoration: underline;
     }
 
@@ -371,11 +381,17 @@ footer {
         margin: 1em 30vw 1em 10vw;
     }
     .change-btn {
-        padding: 0.5em;
-        margin: 0 0 0 5em;
-        background-color: rgb(232, 238, 241, 0.0);
+        padding: 0.9em;
+        margin: 0 0 0 1em;
+        background-color:rgb(232, 238, 241, 0.5);
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
     }
-
+    .change-btn:hover {
+        cursor: pointer;
+        font-weight: bold;
+        background-color: rgb(232, 238, 241);
+    }
     #contact-page h1 {
         margin: 1em 30vw 1em 10vw;
     }
