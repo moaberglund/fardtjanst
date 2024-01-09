@@ -62,10 +62,6 @@ function listDisplay() {
         chevEl.style.display = "block";
     }
 }
-//boka ny resa
-function confirmFunction() {
-    confirm("Är du säker?");
-}
 
 //bokade resor-lista
 function editFunction() {
