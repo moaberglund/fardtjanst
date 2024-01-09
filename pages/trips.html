@@ -23,18 +23,18 @@
             <img src="../media/logotyp.svg" alt="logotyp">
 
             <!-- MENY-knapp -->
-            <button type="button" aria-label="Öppna meny" class="menu-btn open" id="open-menu">
+            <button aria-label="Öppna meny" class="menu-btn open" id="open-menu">
                 <i class="fa-solid fa-bars fa-lg" style="color: #ffffff;"></i>
             </button>
             <nav id="nav-menu">
                 <!-- stäng meny knapp -->
-                <button type="button" aria-label="Stäng meny" class="menu-btn close" id="close-menu">
+                <button aria-label="Stäng meny" class="menu-btn close" id="close-menu">
                     <i class="fa-solid fa-xmark fa-lg" style="color: #de2c33;"></i>
                 </button>
                 <ul>
                     <li><a href="booking.html"><i class="fa-solid fa-plus fa-sm" style="color: #000000;"></i> Ny
                             bokning</a></li>
-                    <li><a href="trips.html"><i class="fa-regular fa-calendar fa-sm" style="color: #000000;"></i> Mina
+                    <li><a class="you-are-here" href="trips.html"><i class="fa-regular fa-calendar fa-sm" style="color: #000000;"></i> Mina
                             resor</a></li>
                     <li><a href="contact.html"><i class="fa-regular fa-comment-dots fa-sm" style="color: #000000;"></i>
                             Kontakt</a></li>
@@ -53,41 +53,41 @@
 
             <div class="list">
                 <!-- ner chevron knapp -->
-                <button type="button" aria-label="Visa lista" id="chevron-down" class="trips-btn">
+                <button aria-label="Visa lista" id="chevron-down" class="trips-btn">
                     Lista:
                     <i class="fa-solid fa-chevron-down fa-lg" style="color: #ffffff;"></i>
                 </button>
                 <div id="trips-list" class="trips-list chevron">
                     <!-- upp chevron knapp -->
-                    <button type="button" aria-label="Dölj lista" id="chevron-up" class="trips-btn">
+                    <button aria-label="Dölj lista" id="chevron-up" class="trips-btn">
                         Lista:
                         <i class="fa-solid fa-chevron-up fa-lg" style="color: #ffffff;"></i>
                     </button>
                     <ul>
                         <li>Torsdag 9/1 2024 - 12:00
                             <!-- edit -->
-                            <button type="button" class="change-btn e" aria-label="Redigera resa" onclick="editFunction()"><i
+                            <button class="change-btn e" aria-label="Redigera resa" onclick="editFunction()"><i
                                     class="fa-solid fa-pen-to-square" style="color: #000000;"></i><br>Redigera</button>
                             <!-- delete -->
-                            <button type="button" class="change-btn" aria-label="Radera resa" onclick="deleteFunction()"><i
+                            <button class="change-btn" aria-label="Radera resa" onclick="deleteFunction()"><i
                                     class="fa-solid fa-trash" style="color: #000000;"></i><br>Ta bort</button>
                         </li>
 
                         <li>Lördag 13/1 2024 - 17:00
                             <!-- edit -->
-                            <button type="button" class="change-btn e" aria-label="Redigera resa" onclick="editFunction()"><i
+                            <button class="change-btn e" aria-label="Redigera resa" onclick="editFunction()"><i
                                     class="fa-solid fa-pen-to-square" style="color: #000000;"></i><br>Redigera</button>
                             <!-- delete -->
-                            <button type="button" class="change-btn" aria-label="Radera resa" onclick="deleteFunction()"><i
+                            <button class="change-btn" aria-label="Radera resa" onclick="deleteFunction()"><i
                                     class="fa-solid fa-trash" style="color: #000000;"></i><br>Ta bort</button>
                         </li>
 
                         <li>Lördag 13/1 2024 - 19:30
                             <!-- edit -->
-                            <button type="button" class="change-btn e" aria-label="Redigera resa" onclick="editFunction()"><i
+                            <button class="change-btn e" aria-label="Redigera resa" onclick="editFunction()"><i
                                     class="fa-solid fa-pen-to-square" style="color: #000000;"></i><br>Redigera</button>
                             <!-- delete -->
-                            <button type="button" class="change-btn" aria-label="Radera resa" onclick="deleteFunction()"><i
+                            <button class="change-btn" aria-label="Radera resa" onclick="deleteFunction()"><i
                                     class="fa-solid fa-trash" style="color: #000000;"></i><br>Ta bort</button>
 
                         </li>
@@ -96,7 +96,7 @@
 
             </div>
             <div class="calendar">
-                <button type="button" class="trips-btn">
+                <button class="trips-btn">
                     Kalender:
                     <i class="fa-solid fa-chevron-down fa-lg" style="color: #ffffff;"></i>
                 </button>
@@ -108,15 +108,15 @@
     <!-- footer -->
     <footer>
         <div class="wrapper" id="footer-2">
-            <div id="contact">
-                <h2>Kontakt</h2>
-                <a href="tel:0250-123133"><i class="fa-solid fa-phone" style="color: #000000;"></i> 0250 - 123 12 33</a>
+            <div class="c1" id="contact">
+                <a href="tel:0250-123133">
+                    <i class="fa-solid fa-phone" style="color: #000000;"></i>0250 - 123 12 33</a><br>
                 <a href="mailto:info@fardtjanst.com"><i class="fa-solid fa-envelope" style="color: #000000;"></i>
                     info@fardtjanst.com</a>
             </div>
-            <div id="copyright">
+            <div class="c2" id="copyright">
                 <p><a href="">Tillgänglighetsrapport</a></p>
-                <p>&copy; Moa Berglund 2023</p>
+                <p>&copy; Moa Berglund 2024</p>
             </div>
         </div>
     </footer>

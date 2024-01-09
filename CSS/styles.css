@@ -15,15 +15,21 @@ body {
     display: flex;
     flex-direction: column;
 }
-.tab-skipper { 
+
+.tab-skipper {
     background-color: #DE2C33;
     color: #DE2C33;
     text-decoration: none;
 }
+
 .tab-skipper:hover {
     font-size: 1.1em;
     color: white;
     text-decoration: underline;
+}
+
+.you-are-here {
+    color: black;
 }
 
 h1 {
@@ -83,7 +89,6 @@ nav a {
 }
 
 nav a:hover {
-    font-size: 1.2em;
     text-decoration: underline;
     cursor: pointer;
 }
@@ -237,6 +242,7 @@ body {
 #trips-list {
     display: none;
 }
+
 .trips-list ul {
     list-style: none;
 }
@@ -251,18 +257,21 @@ body {
     border-radius: 5px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
 }
+
 .change-btn {
     padding: 0.9em;
     margin: 0 0 0 1em;
-    background-color:rgb(232, 238, 241, 0.5);
+    background-color: rgb(232, 238, 241, 0.5);
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
     border-radius: 5px;
 }
+
 .change-btn:hover {
     cursor: pointer;
     font-weight: bold;
     background-color: rgb(232, 238, 241);
 }
+
 .e {
     margin: 0 0 0 5em;
 }
@@ -274,20 +283,23 @@ body {
 }
 
 footer {
+    line-height: 2.5em;
     background-color: #E8EEF1;
     padding: 1em 0 1em 1em;
     margin-top: auto;
 }
+.c1, .c2 {
+    width: 30%;
+    float: left;
+    margin: 0 10% 0 10%;
+    
+}
+
 
 #footer-1 a {
     display: block;
-    padding-top: 1em;
 }
 
-#footer-2 a {
-    line-height: 1.7em;
-
-}
 
 #info-page p {
     width: 60vw;
@@ -380,18 +392,21 @@ footer {
     #booking-page form {
         margin: 1em 30vw 1em 10vw;
     }
+
     .change-btn {
         padding: 0.9em;
         margin: 0 0 0 1em;
-        background-color:rgb(232, 238, 241, 0.5);
+        background-color: rgb(232, 238, 241, 0.5);
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
         border-radius: 5px;
     }
+
     .change-btn:hover {
         cursor: pointer;
         font-weight: bold;
         background-color: rgb(232, 238, 241);
     }
+
     #contact-page h1 {
         margin: 1em 30vw 1em 10vw;
     }
