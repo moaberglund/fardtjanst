@@ -176,7 +176,10 @@ body {
     height: 2em;
     width: 300px;
 }
-#rapport-page h2, h3 {
+#rapport-page h2 {
+    margin: 2em 0 0 2em;
+}
+#rapport-page h3 {
     margin: 2em 0 0 2em;
 }
 #rapport-page p {
